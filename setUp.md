@@ -1,4 +1,5 @@
 ![license](https://img.shields.io/badge/license-MIT-blue)
+https://img.shields.io/badge/license-GNU%20GPLv3-blue
 # Project Title
 
 ## Project Description

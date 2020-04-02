@@ -1,3 +1,6 @@
+//require packages
+const axios = require("axios");
+
 const api = {
   getUser(username) {
 
