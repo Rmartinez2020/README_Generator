@@ -1,4 +1,7 @@
-function generateMarkdown(answers) {
+const api = require("./api")
+
+
+function generateMarkdown(answers, picture) {
   return `
   # ${answers.title}
 
@@ -10,21 +13,35 @@ function generateMarkdown(answers) {
   
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Test](#test)
   * [Credits](#credits)
+  * [Questions](#questions)
   * [License](#license)
   
   ## Installation
-
-  ${answers.install}
+  
+  This is how you install the app:
+  \`${answers.install}\`
   
   ## Usage 
   
-  ${answers.usage}
-  
+  How to use the app:
+
+  \`${answers.usage}\`
+
+  ## Test
+
+  Run this to test the app:
+  \`${answers.test}\`
   
   ## Credits
-  
   ${answers.credits}
+
+  ## Questions
+  
+  Link to my repo:
+
+  ${api.data.data.url}
   
   
   ## License

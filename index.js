@@ -39,22 +39,16 @@ const questions = [
     {
         type:"input",
         name:"test",
-        message:"How do you test your project?",
-        choices:["MIT", "GNU GPLv3"]
+        message:"How do you test your project?"
     },
-    {
-        type:"input",
-        name:"questions",
-        message:"Who should user contact with questions?",
-        choices:["MIT", "GNU GPLv3"]
-    },
-
-
 ];
 
 function init() {
+    //prompt the use with questions
     inquirer.prompt(questions).then(function (answers){
-        api.getUser(answers.username);
+        //use the username input to hit the github api
+        const picture = api.getUser(answers.username);
+
          let newFile = generateMarkdown(answers);
         fs.writeFile('newReadMe.md', newFile, function (err) {
             if (err) throw err;
