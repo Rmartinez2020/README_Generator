@@ -1,6 +1,7 @@
 // Require all npm packages and files
 const inquirer = require("inquirer");
 const fs = require("fs");
+const api = require("./utils/api")
 // questions to user using "enquirer"
 const questions = [
     {
@@ -51,7 +52,9 @@ const questions = [
 ];
 
 function init() {
-
+    inquirer.prompt(questions).then(function (answers){
+        api.getUser(answers.username);
+    })
 
 
 }
