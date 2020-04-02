@@ -1,10 +1,9 @@
-function generateMarkdown(answers) {
-  return `
-  # ${answers.title}
+
+  # Readme_generator
 
   ## Project Description
   
-  ${answers.description}
+  generate read mes
   
   ## Table of Contents
   
@@ -15,22 +14,18 @@ function generateMarkdown(answers) {
   
   ## Installation
 
-  ${answers.install}
+  npm i
   
   ## Usage 
   
-  ${answers.usage}
+  node index.js after install
   
   
   ## Credits
   
-  ${answers.credits}
+  undefined
   
   
   ## License
   https://img.shields.io/badge/license-GNU%20GPLv3-blue
-  ![license](https://img.shields.io/badge/license-${answers.license}-blue)
-`;
-}
-
-module.exports = generateMarkdown;
+  ![license](https://img.shields.io/badge/license-MIT-blue)

@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const api = require("./utils/api")
+const generateMarkdown = require("./utils/generateMarkdown")
 // questions to user using "enquirer"
 const questions = [
     {
@@ -54,6 +55,11 @@ const questions = [
 function init() {
     inquirer.prompt(questions).then(function (answers){
         api.getUser(answers.username);
+         let newFile = generateMarkdown(answers);
+        fs.writeFile('newReadMe.md', newFile, function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+          });
     })
 
 
