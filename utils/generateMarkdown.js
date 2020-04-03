@@ -18,6 +18,7 @@ function generateMarkdown(answers, avatar) {
   ## Installation
   
   This is how you install the app:
+  
   \`${answers.install}\`
   
   ## Usage 
@@ -29,9 +30,11 @@ function generateMarkdown(answers, avatar) {
   ## Test
 
   Run this to test the app:
+
   \`${answers.test}\`
   
   ## Credits
+
   ${answers.credits}
 
   ## Questions
@@ -44,6 +47,7 @@ function generateMarkdown(answers, avatar) {
   
   
   ## License
+
   ![license](https://img.shields.io/badge/license-${answers.license}-blue)
 `;
 }
