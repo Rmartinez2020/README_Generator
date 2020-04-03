@@ -3,7 +3,7 @@
 
   ## Project Description
   
-  As a user i want to generate read me files by answering questions about my project
+  As a user I want to generate a read me file after answering questions about my project.
   
   ## Table of Contents
   
@@ -17,6 +17,7 @@
   ## Installation
   
   This is how you install the app:
+  
   `npm i`
   
   ## Usage 
@@ -28,9 +29,11 @@
   ## Test
 
   Run this to test the app:
+
   `npm test`
   
   ## Credits
+
   Rogelio Martinez
 
   ## Questions
@@ -43,4 +46,5 @@
   
   
   ## License
+
   ![license](https://img.shields.io/badge/license-MIT-blue)
