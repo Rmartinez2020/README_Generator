@@ -1,7 +1,4 @@
-const api = require("./api")
-
-
-function generateMarkdown(answers, picture) {
+function generateMarkdown(answers, avatar) {
   return `
   # ${answers.title}
 
@@ -41,11 +38,12 @@ function generateMarkdown(answers, picture) {
   
   Link to my repo:
 
-  ${api.data.data.url}
+  https://github.com/${answers.username}
+  
+  <img src="${avatar}" height="100px" width="100px"/>
   
   
   ## License
-  https://img.shields.io/badge/license-GNU%20GPLv3-blue
   ![license](https://img.shields.io/badge/license-${answers.license}-blue)
 `;
 }

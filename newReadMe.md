@@ -1,31 +1,46 @@
 
-  # Readme_generator
+  # Readme Generator
 
   ## Project Description
   
-  generate read mes
+  asd
   
   ## Table of Contents
   
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Test](#test)
   * [Credits](#credits)
+  * [Questions](#questions)
   * [License](#license)
   
   ## Installation
-
-  npm i
+  
+  This is how you install the app:
+  `npm i`
   
   ## Usage 
   
-  node index.js after install
-  
+  How to use the app:
+
+  `node index.js`
+
+  ## Test
+
+  Run this to test the app:
+  `npm test`
   
   ## Credits
-  
   undefined
+
+  ## Questions
+  
+  Link to my repo:
+
+  https://github.com/Rmartinez2020
+  
+  <img src="https://avatars2.githubusercontent.com/u/58122887?v=4" height="100px" width="100px"/>
   
   
   ## License
-  https://img.shields.io/badge/license-GNU%20GPLv3-blue
   ![license](https://img.shields.io/badge/license-MIT-blue)
