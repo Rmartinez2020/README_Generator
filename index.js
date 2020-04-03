@@ -1,7 +1,6 @@
 // Require all npm packages and files
 const inquirer = require("inquirer");
 const fs = require("fs");
-const api = require("./utils/api")
 const generateMarkdown = require("./utils/generateMarkdown");
 const axios = require("axios");
 // questions to user using "enquirer"
@@ -42,6 +41,11 @@ const questions = [
         name: "test",
         message: "How do you test your project?"
     },
+    {
+        type: "input",
+        name: "credits",
+        message: "Who made contributions to this project?"
+    },
 ];
 
 function init() {
@@ -50,11 +54,12 @@ function init() {
         //use the username input to hit the github api
         const queryUrl = `https://api.github.com/users/${answers.username}`;
         axios.get(queryUrl).then(function (data) {
+            //get the avatar url from the object
             const avatar = data.data.avatar_url;
+            //make a new file 
             let newFile = generateMarkdown(answers, avatar);
             fs.writeFile('newReadMe.md', newFile, function (err) {
                 if (err) throw err;
-                console.log('Saved!');
             });
         }
         )
