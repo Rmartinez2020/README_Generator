@@ -1,9 +1,9 @@
 
-  # Readme Generator
+  # Read Me Generator
 
   ## Project Description
   
-  asd
+  As a user i want to generate read me files by answering questions about my project
   
   ## Table of Contents
   
@@ -28,12 +28,10 @@
   ## Test
 
   Run this to test the app:
-
   `npm test`
   
   ## Credits
-  
-  undefined
+  Rogelio Martinez
 
   ## Questions
   
